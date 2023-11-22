@@ -1,6 +1,0 @@
-name :ishlayapti
-Password :ha_aniq_ishlayapti007
-
-name :yana_ishlayapti
-Password :yana_007
-
