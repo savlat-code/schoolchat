@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  <style>
+    *{
+      font-family:'Courier New', Courier, monospace;
+      color: white;
+    }
+    body{
+      margin: 0;
+      padding: 0;
+      background-color: black;
+    }
+    .box{
+      margin-top: 50px;
+      margin-bottom: 50px;
+      text-align: center;
+      width: 400px;
+      height: 540px;
+      border: 2px solid blue;
+      border-radius: 15px;
+      background-image: url(images/kali.png);
+    }
+    h1{
+      margin-top: 2%;
+    }
+    span{
+      border-radius: 5px;
+      padding: 2px 10px;
+      border: 1px solid blue;
+    }
+    h3{
+      font-size: 24px;
+      margin-top: 6%;
+      color: white;
+    }
+    .login-input{
+      font-size: 20px;
+      margin-top: 10px;
+    }
+    input{
+      background-color: black; 
+      padding: 5px;
+      border-radius: 5px;
+      border: none;
+      font-size: 24px;
+      border: 1px solid blue;
+      color: white;
+    }
+    button{
+      width: 304px;
+      font-size: 24px;
+      border: 1px solid blue;
+      border-radius: 5px;
+      background-color: black;
+      color: white;
+    }
+    button:hover{
+      background-color: blue;
+    }
+    button:active{
+      background-color: rgb(74, 74, 250);
+    }
+    p{
+        margin-top: 15px;
+        color: grey;
+    }
+    a{
+        font-style: none;
+        color: blue;
+    }
+    a:hover{
+      color: rgb(39, 39, 246);
+    }
+    a:active{
+      color: rgb(0, 19, 113);
+    }
+  </style>
+</head>
+<body>
+  <center>
+  <h1><span>Kali Linux</span></h1>
+  <div class="box">
+    <h3>Sign Up</h3>
+    <form action="check.php" method="POST">
+      <div class="login-input">
+        <input type="text" placeholder="First Name" required> <br><br>
+        <input type="text" placeholder="Last Name" required> <br><br>
+        <input type="text" placeholder="Email" required> <br><br>
+        <input type="text" placeholder="Username" required> <br><br>
+        <input type="password" placeholder="New password" required> <br><br>
+        <input type="password" placeholder="Confirm password" required> <br><br>
+      </div>
+      <div class="button">
+        <button type="submit">Register</button>
+      </div>
+    </form>
+    <p>Already have an account? <a href="login-kali.html">Log in</a></p>
+  </div>
+</center>
+</body>
+</html>
