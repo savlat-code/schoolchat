@@ -1,171 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create a Personal Portfolio Website using HTML and CSS | Codehal</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 30px 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
-}
-.logo {
-    font-size: 2em;
-    color: #555;
-    cursor: default;
-}
-.logo span {
-    color: #4e5be8;
-}
-.navigation {
-    margin-left: -300px;
-}
-.navigation a {
-    font-size: 1.1em;
-    color: #555;
-    text-decoration: none;
-    margin-right: 40px;
-    font-weight: 500;
-    transition: .3s;
-}
-.navigation a:hover {
-    color: #4e5be8;
-}
-.btn-talk {
-    color: #fff;
-    text-decoration: none;
-    padding: 8px 35px;
-    background: #4e5be8;
-    border-radius: 10px;
-    border: 2px solid #4e5be8;
-    font-weight: 500;
-    transition: .3s;
-}
-.btn-talk:hover {
-    color: #4e5be8;
-    background: transparent;
-}
-.home {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background: url('background.jpg');
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    padding: 30px 100px;
-}
-.content {
-    max-width: 500px;
-    color: #555;
-}
-.content h2 {
-    font-size: 3em;
-}
-.content h2 span {
-    color: #4e5be8;
-}
-.content h4 {
-    font-size: 2em;
-}
-.content p {
-    padding: 10px 0 40px 0;
-}
-.btn-group a {
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 40px;
-    background: #4e5be8;
-    border-radius: 10px;
-    border: 2px solid #4e5be8;
-    font-weight: 500;
-    transition: .3s;
-}
-.btn-group a:hover:nth-child(1) {
-    color: #4e5be8;
-    background: transparent;
-}
-.btn-group a:nth-child(2) {
-    color: #4e5be8;
-    background: transparent;
-    margin-left: 30px;
-    padding: 10px 30px;
-}
-.btn-group a:hover:nth-child(2) {
-    color: #fff;
-    background: #4e5be8;
-}
-.social-icons {
-    position: absolute;
-    bottom: 50px;
-}
-.social-icons a {
-    display: inline-block;
-    width: 35px;
-    height: 35px;
-    background: #4e5be8;
-    border-radius: 50%;
-    margin-right: 22px;
-    text-align: center;
-    line-height: 35px;
-    border: 1px solid #fff;
-    outline: 2px solid #4e5be8;
-    transition: .3s;
-}
-.social-icons a:hover {
-    transform: translateY(-5px);
-}
-.social-icons a i {
-    color: #fff;
-}
-    </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Kali Linux</title>
+  <style>
+    *{
+      font-family:'Courier New', Courier, monospace;
+      color: white;
+    }
+    body{
+      margin: 0;
+      background-color: black;
+    }
+    .box{
+      margin-top: 50px;
+      text-align: center;
+      width: 400px;
+      height: 400px;
+      border: 2px solid blue;
+      border-radius: 15px;
+      background-image: url(images/kali.png);
+    }
+    h1{
+      margin-top: 5%;
+    }
+    span{
+      border-radius: 5px;
+      padding: 2px 10px;
+      border: 1px solid blue;
+    }
+    h3{
+      font-size: 24px;
+      margin-top: 20%;
+      color: white;
+    }
+    .login-input{
+      font-size: 20px;
+      margin-top: 10px;
+    }
+    input{
+      background-color: black; 
+      padding: 5px;
+      border-radius: 5px;
+      border: none;
+      font-size: 24px;
+      border: 1px solid blue;
+      color: white;
+    }
+    button{
+      width: 304px;
+      font-size: 24px;
+      border: 1px solid blue;
+      border-radius: 5px;
+      background-color: black;
+      color: white;
+    }
+    button:hover{
+      background-color: blue;
+    }
+    button:active{
+      background-color: rgb(74, 74, 250);
+    }
+    p{
+        margin-top: 30px;
+        color: grey;
+    }
+    a{
+        font-style: none;
+        color: blue;
+    }
+    a:hover{
+      color: rgb(39, 39, 246);
+    }
+    a:active{
+      color: rgb(0, 19, 113);
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h2 class="logo"><span>BB</span>ooK.</h2>
-        <nav class="navigation">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Portfolio</a>
-            <a href="#">Blog</a>
-            <a href="#">Contact</a>
-        </nav>
-        <a href="#" class="btn-talk">Let's Talk</a>
-    </header>
-    <section class="home">
-        <div class="content">
-            <h2>Hi, I'm <span>Savlat Zayniyev</span></h2>
-            <h4>Frontend Developer</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A esse totam provident voluptas similique.
-                Impedit incidunt atque recusandae rem quam.</p>
-            <div class="btn-group">
-                <a href="#">Hire Me</a>
-                <a href="#">See Projects</a>
-            </div>
-            <div class="social-icons">
-                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            </div>
-        </div>
-    </section>
+  <center>
+  <h1><span>Kali Linux</span></h1>
+  <div class="box">
+    <h3>Login</h3>
+    <form action="check.php" method="POST">
+      <div class="login-input">
+        <input type="text" placeholder="Username" required> <br><br>
+        <input type="password" placeholder="Password" required> <br><br>
+      </div>
+      <div class="button">
+        <button type="submit">Log in</button>
+      </div>
+    </form>
+    <p>Don't have an account? <a href="sign-up.html">Sign up</a></p>
+  </div>
+</center>
 </body>
 </html>
