@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://api.logobank.uz/media/logos_png/Ozlidep-01.png">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: sans-serif;
+        }
+        .container {
+            padding: 40px;
+        }
+        .container__brand {
+            width: 100%;
+            text-align: center;
+            color: #2d846e;
+        }
+        input {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 14px;
+            margin-top: 5px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input:focus {
+            color: #495057;
+            outline: 0;
+            border-color: #ddd;
+        }
+
+        button {
+            width: 100%;
+            padding: 14px 20px;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            background: #2d846e;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #21715d;
+        }
+
+        button:active {
+            background: #2d846e;
+        }
+
+        .container__author {
+            font-size: 14px;
+            margin-top: 200px;
+            font-weight: 100;
+            display: inline-block;
+            color: white;
+            box-sizing: border-box;
+            padding: 5px 10px;
+            border-radius: 5px;
+            background: linear-gradient(to right, #21715d, blue);
+        }
+
+        .container__author:hover {
+            background: linear-gradient(to right, blue, #21715d);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="container__brand">O'zLiDep</h1>
+        <form action="">
+            <label for="firstname">Ism</label>
+            <input type="text" name="firstname" id="firstname" placeholder="Ismingizni kiriting">
+            <label for="lastname">Familya</label>
+            <input type="text" name="lastname" id="lastname" placeholder="Familyangizni kiriting">
+    
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Emailingizni kiriting">
+    
+            <button type="submit">Yuborish</button>
+        </form>
+        <p class="container__author">Created by [Zayniyev <span class="author__name">Savlat</span>]</p>
+    </div>
+</body>
+</html>
