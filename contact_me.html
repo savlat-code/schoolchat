@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://api.logobank.uz/media/logos_png/Ozlidep-01.png">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: sans-serif;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .contact {
+            padding: 50px 40px;
+            box-sizing: border-box;
+        }
+
+        .section-title {
+            margin-top: 5px;
+            font-size: 42px;
+            font-weight: 700;
+            text-transform: capitalize;
+            color: #2d846e;
+        }
+
+        textarea,
+        input {
+            width: 100%;
+            padding: 14px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #f0e9ff;
+            border-radius: 5px;
+            padding-left: 18px;
+            font-size: 13px;
+            color: #495057;
+            background: transparent;
+        }
+
+        textarea:focus,
+        input:focus {
+            outline: 0;
+        }
+
+        .half-row {
+            width: 50%;
+            float: left;
+            box-sizing: border-box;
+        }
+
+        .contact-firstname {
+            padding-right: 20px;
+        }
+
+        .contact-email {
+            padding-left: 20px;
+        }
+
+        .contact-action {
+            margin-top: 30px;
+        }
+
+        .button {
+            font-size: 14px;
+            font-weight: 500;
+            border: none;
+            width: 100%;
+            background: #2d846e;
+            color: white;
+            border-radius: 5px;
+            padding: 14px 20px;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background: #21715d;
+        }
+
+        .button:active {
+            background: #2d846e;
+        }
+
+        .container_footer {
+            width: 100%;
+            height: 300px;
+            box-sizing: border-box;
+            background-color: rgb(67, 67, 67);
+            padding: 40px;
+            color: white;
+        }
+
+        .footer__author {
+            text-align: center;
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 1mm;
+        }
+
+        .footer__author:hover {
+            color: #21715d;
+            cursor: pointer;
+        }
+
+        .footer__navigation {
+            text-align: center;
+            margin-top: 20px;
+            width: 100%;
+        }
+
+        .footer__navigation a {
+            text-decoration: none;
+            color: white;
+            margin-right: 5px;
+            width: 100%;
+        }
+
+        .footer__navigation a:hover {
+            color: orange;
+        }
+
+        .footer__navigation a:active {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <section class="contact">
+            <div class="section-title">Men bilan bog'laning</div>
+            <form action="">
+                <textarea name="message" rows="12" placeholder="Xabaringizni kiriting"></textarea>
+                <div class="half-row contact-firstname">
+                    <input type="text" placeholder="Ismingizni kiriting" />
+                </div>
+                <div class="half-row contact-email">
+                    <input type="email" placeholder="Emailingizni kiriting" />
+                </div>
+                <input type="text" placeholder="Xat mazmuni" />
+
+                <button type="submit" class="button contact-action">Xabar jo'natish</button>
+            </form>
+        </section>
+    </div>
+
+    <div class="container_footer">
+        <div class="footer__author">Created by [Savlat Zayniyev]</div>
+        <nav class="footer__navigation">
+            <a href="./index.html">Home</a>
+            <a href="./contact_me.html">Contact</a>
+            <a href="#">About</a>
+            <a href="#">Feedback</a>
+        </nav>
+    </div>
+</body>
+
+</html>
