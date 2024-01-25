@@ -10,6 +10,10 @@
         * {
             font-family: sans-serif;
         }
+        body {
+            margin: 0;
+            padding: 0;
+        }
         .container {
             padding: 40px;
         }
@@ -42,6 +46,8 @@
             color: white;
             background: #2d846e;
             cursor: pointer;
+            margin-top: 20px;
+            margin-bottom: 50px;
         }
 
         button:hover {
@@ -52,20 +58,46 @@
             background: #2d846e;
         }
 
-        .container__author {
-            font-size: 14px;
-            margin-top: 200px;
-            font-weight: 100;
-            display: inline-block;
-            color: white;
+        .container_footer {
+            width: 100%;
+            height: 300px;
             box-sizing: border-box;
-            padding: 5px 10px;
-            border-radius: 5px;
-            background: linear-gradient(to right, #21715d, blue);
+            background-color: rgb(67, 67, 67);
+            padding: 40px;
+            color: white;
         }
 
-        .container__author:hover {
-            background: linear-gradient(to right, blue, #21715d);
+        .footer__author {
+            text-align: center;
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 1mm;
+        }
+
+        .footer__author:hover {
+            color: #21715d;
+            cursor: pointer;
+        }
+
+        .footer__navigation {
+            text-align: center;
+            margin-top: 20px;
+            width: 100%;
+        }
+
+        .footer__navigation a {
+            text-decoration: none;
+            color: white;
+            margin-right: 5px;
+            width: 100%;
+        }
+
+        .footer__navigation a:hover {
+            color: orange;
+        }
+
+        .footer__navigation a:active {
+            color: red;
         }
     </style>
 </head>
@@ -81,9 +113,18 @@
             <label for="email">Email</label>
             <input type="email" name="email" id="email" placeholder="Emailingizni kiriting">
     
-            <button type="submit">Yuborish</button>
+            <button type="submit" class="button">Yuborish</button>
         </form>
-        <p class="container__author">Created by [Zayniyev <span class="author__name">Savlat</span>]</p>
+    </div>
+
+    <div class="container_footer">
+        <div class="footer__author">Created by [Savlat Zayniyev]</div>
+        <nav class="footer__navigation">
+            <a href="./index.html">Home</a>
+            <a href="./contact_me.html">Contact</a>
+            <a href="#">About</a>
+            <a href="#">Feedback</a>
+        </nav>
     </div>
 </body>
 </html>
